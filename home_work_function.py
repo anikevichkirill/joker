@@ -40,3 +40,21 @@ while True:
             break
     else:
         print("Выбери другое действие!")
+
+# task2
+
+# Написать функцию season, принимающую 1 аргумент — номер месяца (от 1 до 12), и возвращающую время года,
+# которому этот месяц принадлежит (зима, весна, лето или осень). Номер месяца вводить с клавиатуры.
+
+def season(a):
+    year = {'Winter': (1, 2, 12),
+            'Sping': (3, 4, 5),
+            'Summer': (6, 7, 8),
+            'Autumn': (9, 10, 11)}
+
+    for key in year.keys():
+        if a in year[key]:
+            return key
+
+
+print(season(int(input('Choose number a month: '))))
