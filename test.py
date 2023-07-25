@@ -71,7 +71,7 @@ class TomatoBush:
         self.tomatoes = [Tomato(i) for i in range(1, col_pot + 1)]
 
     def grow_all(self):
-
+        pass
 
     def all_are_ripe(self):
         pass
